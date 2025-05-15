@@ -8,7 +8,7 @@ StructAI is a practical AI system that generates structural designs from natural
 
 The system is built upon GPT-4 with fine-tuning on a focused dataset of structural design descriptions. The training data comprises:
 
-- 100+ real-world structural designs from professional architects and engineers
+- 100+ real-world structural designs from professional structural engineers
 - 900+ synthetic examples generated through prompt engineering with GPT-4
 - Coverage of 2D truss and 3D grid structure typologies
 - Basic validation for geometric feasibility
@@ -22,7 +22,7 @@ The synthetic data generation process ensures:
 ## Key Implementations
 
 - **Natural Language Processing**: Fine-tuned GPT-4 model for parsing structural design requirements and generating geometric parameters
-- **Geometric Generation**: Basic algorithms for translating descriptions into 3D models
+- **Geometric Generation**: Basic algorithms for translating descriptions into 2D and 3D models
 - **Pattern Recognition**: Template-based pattern matching for common structural configurations
 - **CAD Integration**: Direct API interface for geometric modeling
 
@@ -38,7 +38,7 @@ Given the input, StructAI generates:
 3. Regular nodal spacing
 4. A typical truss pattern optimized for structrual continuity
 
-![Three-Span Bridge Truss](demo/2D%20Truss.png)
+![Three-Span Bridge Truss](Demo/2D%20Truss.png)
 *Generated three-span continuous truss with standard proportions*
 
 ### Example 2: Exhibition Space Gridshell
@@ -51,7 +51,7 @@ Given the architectural intent, StructAI creates:
 3. Regularized grid pattern across the surface
 4. A typical mesh density suitable for structural clarity and fabrication
 
-![Exhibition Gridshell](demo/Single-layer%20Trumpet-shaped%20GridShell.png)
+![Exhibition Gridshell](Demo/Single-layer%20Trumpet-shaped%20GridShell.png)
 *Generated single-layer gridshell with standard pattern*
 
 ### Example 3: Flower-Shaped Space Frame
@@ -65,7 +65,7 @@ Given the design concept, StructAI delivers:
 4. Standardized member density
 5. Strategically support placements at petal tips and valley intersections
 
-![Flower Space Frame](demo/Double-layer%20Flower-shaped%20GridShell.png)
+![Flower Space Frame](Demo/Double-layer%20Flower-shaped%20GridShell.png)
 *Generated double-layer space frame with standard pattern*
 
 ## Technical Architecture
