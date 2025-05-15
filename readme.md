@@ -39,11 +39,11 @@ Given the input, StructAI generates:
 4. A typical truss pattern optimized for structrual continuity
 
 ![Three-Span Bridge Truss](Demo/2D%20Truss.png)
-*Generated three-span continuous truss with standard proportions*
+*Generated three-span continuous truss*
 
 ### Example 2: Exhibition Space Gridshell
 ```python
-Input: "Create a trumpet-shaped single-layer gridshell for a public exhibition space. It should span roughly 30m."
+Input: "Create a trumpet-shaped single-layer gridshell for a public exhibition space. It should span roughly 50m."
 ```
 Given the architectural intent, StructAI creates:
 1. Trumpet-shaped geometry, expanding from a 3-meter base to a 45-meter top diameter
@@ -52,7 +52,7 @@ Given the architectural intent, StructAI creates:
 4. A typical mesh density suitable for structural clarity and fabrication
 
 ![Exhibition Gridshell](Demo/Single-layer%20Trumpet-shaped%20GridShell.png)
-*Generated single-layer gridshell with standard pattern*
+*Generated single-layer gridshell*
 
 ### Example 3: Flower-Shaped Space Frame
 ```python
@@ -66,7 +66,7 @@ Given the design concept, StructAI delivers:
 5. Strategically support placements at petal tips and valley intersections
 
 ![Flower Space Frame](Demo/Double-layer%20Flower-shaped%20GridShell.png)
-*Generated double-layer space frame with standard pattern*
+*Generated double-layer space frame*
 
 ## Technical Architecture
 
@@ -132,22 +132,21 @@ Given the design concept, StructAI delivers:
 ### System Structure
 ```
 StructAI/
-├── ai/                    # AI modules
+├── ai/                   # AI modules
 │   ├── nlp/              # Language processing
 │   ├── patterns/         # Pattern templates and matching
 │   └── geometry/         # Form generation
 ├── core/                 # Core functionality
-│   ├── geometry/        # Basic geometric computation
-│   │   ├── truss/      # 2D truss generation
-│   │   └── grid/       # 3D grid generation
-│   ├── patterns/        # Standard pattern generation
-│   │   ├── templates/  # Pattern templates
-│   │   └── matching/   # Pattern matching
-│   └── cad/            # CAD integration
-│       ├── model/      # Model generation
-│       └── docs/       # Documentation
+│   ├── geometry/         # Basic geometric computation
+│   │   ├── truss/        # 2D truss generation
+│   │   └── grid/         # 3D grid generation
+│   ├── patterns/         # Standard pattern generation
+│   │   ├── templates/    # Pattern templates
+│   │   └── matching/     # Pattern matching
+│   └── cad/              # CAD integration
+│       └── model/        # Model generation
 ├── api/                  # API interfaces
-└── utils/               # Utility functions
+└── utils/                # Utility functions
 ```
 
 ## Implementation
