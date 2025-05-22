@@ -6,10 +6,10 @@ StructAI is a practical AI system that generates structural designs from natural
 
 ## Training Dataset and Model
 
-The system is built upon GPT-4 with fine-tuning on a focused dataset of structural design descriptions. The training data comprises:
+The system is built upon Google's Flan T5 model with fine-tuning on a focused dataset of structural design descriptions. The training data comprises:
 
 - 100+ real-world structural designs from professional structural engineers
-- 900+ synthetic examples generated through prompt engineering with GPT-4
+- 900+ synthetic examples generated through prompt engineering
 - Coverage of 2D truss and 3D grid structure typologies
 - Basic validation for geometric feasibility
 
@@ -21,7 +21,7 @@ The synthetic data generation process ensures:
 
 ## Key Implementations
 
-- **Natural Language Processing**: Fine-tuned GPT-4 model for parsing structural design requirements and generating geometric parameters
+- **Natural Language Processing**: Fine-tuned Flan T5 model for parsing structural design requirements and generating geometric parameters
 - **Geometric Generation**: Basic algorithms for translating descriptions into 2D and 3D models
 - **Pattern Recognition**: Template-based pattern matching for common structural configurations
 - **CAD Integration**: Direct API interface for geometric modeling
@@ -71,7 +71,7 @@ Given the design concept, StructAI delivers:
 ## Technical Architecture
 
 ### Core Components
-- **Language Processing**: Fine-tuned GPT-4 model for:
+- **Language Processing**: Fine-tuned Flan T5 model for:
   - Design intent interpretation
   - Parameter extraction and validation
   - Geometric constraint generation
